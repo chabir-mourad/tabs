@@ -18,17 +18,7 @@ const $tableID = $('#table');
   </td>
 </tr>`;
 
- $('.table-add').on('click', 'i', () => {
-
-   const $clone = $tableID.find('tbody tr').last().clone(true).removeClass('hide table-line');
-
-   if ($tableID.find('tbody tr').length === 0) {
-
-     $('tbody').append(newTr);
-   }
-
-   $tableID.find('table').append($clone);
- });
+ 
 
  $tableID.on('click', '.table-remove', function () {
 
